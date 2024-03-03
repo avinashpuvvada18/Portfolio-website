@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>my profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/x-icon" href="https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg">
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+    
+     <!--start Hearder section--> 
+     <div id="hearder"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"> 
+        <div class="contenier">
+            <nav >
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#hearder" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="fa-solid fa-xmark" onclick="closemenu()"></li>
+                 </ul>
+                 <ul class="fa-solid fa-bars" onclick="openmenu()"></ul>
+              </nav> 
+              <div class="hearder-text"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <p>Front-end developer</p>
+                <h1>Hi I am <span>avinashpuvvada</span> <br> From India</h1>
+              </div>       
+            </div>
+        </div>
+      <!--End Hearder section-->
+
+
+      <!--start About section-->
+      <div id="about" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="https://plus.unsplash.com/premium_photo-1682141016654-7cda8fa68d0a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHBvcnRyYWl0JTIwY29kaW5nJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D" alt="hi">  
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hey there! I'm Avinashpuvvada, a graduate from Vel Tech University with a degree in Electrical and Electronics Engineering. I'm proud to say that I achieved an impressive aggregate score of 7.89. Following my graduation, I took on a challenging training program to become a Python Full Stack Developer at Teks Academy. The experience was exhilarating, and I gained a wealth of knowledge that has helped me to become more confident in my abilities as a developer.</p>
+                   <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                    <ul>
+                        <li> Programming skills <br> <Span>PYTHON, HTML, CSS</Span></li>
+                        <li>Data Analysis<br><span>Powerbi</span></li>
+                        <li>Artificial intelligence <br><span>Machine learning</span></li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>June,2023 - Jan,2024</span><br>Python full stack developer.</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Electrical and Electrical Engineering</span><br> Vel Tech University.</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--End About section-->
+
+
+
+
+      <!--Service section Start-->
+     <div id="services" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+        <div class="contenier" >
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div data-aos="fade-right">
+                    <img src="web.jpg" alt="Mahi">
+                    <h2>Web Development</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="flip-up">
+                    <img src="analysis.jpg" alt="Den" >
+                    <h2>Data Analysist</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="datasci.jpg" alt="GOA">
+                    <h2>Data Scientist</h2>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+      <!--services section end -->
+
+
+        <!--portfolio section Start-->
+
+        <div id="portfolio">
+            <div class="contenier">
+                <h1 class="sub-title">My Repositories</h1>
+                <div class="work-list" >
+                    <div class="work" data-aos="zoom-in">
+                        <img src="w1.png" alt="DO" >
+                        <div class="layer">
+                            <h2>Basic Banking Website</h2>
+                            <p>I have developed a banking website using HTML, CSS, and JavaScript.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="w2.png" alt="hi">
+                        <div class="layer">
+                            <h2> Coffee Company Analysis</h2>
+                            <p>I am pleased to inform you that I have successfully developed a company analysis chat utilizing Power BI and Excel.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="w3.png" alt="d" >
+                        <div class="layer">
+                            <h2>Traffic Management</h2>
+                            <p>I have done a project on Traffic Management using machine learning adn deep learning.</p>
+                            <a target="_blank"  href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+                <a href="" class="btn">Learn More</a>
+
+            </div>
+        </div>
+         <!--portfolio section End-->
+
+
+          <!--Contact section Start -->
+          <div id="contact"  >
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left"  data-aos="fade-up-right">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>avinashpuvvada5678@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>+91 6305569698</p>
+                        <div class="social-icons" data-aos="zoom-in">
+            
+                            <a target="_blank" class="instagram" href="https://www.instagram.com/its._avi__?igsh=dGRtb21wbHQxbjlk"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a target="_blank" class="github" href="https://github.com/avinashpuvvada18/Avi"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/avinash-puvvada-6b1545210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://pink-verena-50.tiiny.site" class="btn btn2">View Resume</a>
+
+                    </div>
+                    <div class="contact-right" data-aos="fade-up-left">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Website Developed By <span style="color: rgb(224, 44, 44);">avinash-puvvada-6b1545210_source</span></p>
+            </div>
+          </div>
+   
+          <!--Contact section End -->
+          <script>
+            var preloader = document.getElementById("Loading");
+            function loader(){
+              preloader.style.display = 'none';
+            }
+          </script>
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+      
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  <script>
+      var sidmenu = document.getElementById("sidmenu");
+      function openmenu(){
+          sidmenu.style.right ="0";
+      }
+      function closemenu(){
+          sidmenu.style.right ="-200px";
+      }
+  </script>
+</body>
+</html>
